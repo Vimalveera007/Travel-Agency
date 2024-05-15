@@ -1,0 +1,22 @@
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.aboutpage{
+    display: flex;
+    padding: 0px 200px;
+    gap: 40px;
+}
+.aboutcontent{
+    width: 50%;
+    line-height: 30px;
+    margin-top: 50px;
+}
+.menimg{
+    width: auto;
+    height: 800px;
+    border-radius: 10px;
+}

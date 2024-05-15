@@ -1,0 +1,131 @@
+.explore img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.passage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+
+.button {
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    transition: all 0.8s;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+.post {
+    margin-top: 280px;
+    margin-bottom: 50px;
+}
+
+.blog-post {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 400px;
+    height: auto;
+    box-shadow: rgba(56, 54, 54, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    padding: 20px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video:hover {
+    box-shadow: rgba(7, 7, 7, 0.35) 0px 5px 80px;
+}
+
+.hikespot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* .hikespot img {
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hikespot img:hover {
+    opacity: 1;
+}
+
+.hikeimg {
+    position: relative;
+}
+
+
+.hikedetails {
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    opacity: 0;
+    transition: all 1s 0.80s ease;
+    background-color: aliceblue;
+}
+
+
+.hikeimg:hover .hikedetails {
+    left: 0;
+    opacity: 1;
+} */
+
+.hikespot img {
+    opacity: 0.7; /* Initial opacity */
+    transition: opacity 0.5s; /* Smooth transition for opacity */
+    cursor: pointer;
+}
+
+.hikespot img:hover {
+    opacity: 1;
+}
+
+.hikeimg {
+    position: relative;
+}
+
+.hikedetails {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-500px);
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 2s , transform 0.5s; /* Smooth transition for both opacity and transform */
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+.hikeimg:hover .hikedetails {
+    transform: translateX(0); /* Move details back to its original position */
+    opacity: 1; /* Make it fully visible */
+}
